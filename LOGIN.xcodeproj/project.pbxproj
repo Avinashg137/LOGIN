@@ -22,6 +22,8 @@
 		229CBAF327D99A3D00041660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229CBAF127D99A3D00041660 /* Main.storyboard */; };
 		229CBAF527D99A3F00041660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229CBAF427D99A3F00041660 /* Assets.xcassets */; };
 		229CBAF827D99A3F00041660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229CBAF627D99A3F00041660 /* LaunchScreen.storyboard */; };
+		22E0CBF327DBD28C00BE683A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0CBF227DBD28C00BE683A /* RegisterViewController.swift */; };
+		22E0CBF527DBE8D700BE683A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E0CBF427DBE8D600BE683A /* RootViewController.swift */; };
 		8B950A8A24F864DC5F19AEC0 /* Pods_LOGIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0E7006A31D581540E298F0 /* Pods_LOGIN.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		229CBAF427D99A3F00041660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		229CBAF727D99A3F00041660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		229CBAF927D99A4000041660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E0CBF227DBD28C00BE683A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		22E0CBF427DBE8D600BE683A /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9B0E7006A31D581540E298F0 /* Pods_LOGIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LOGIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE84571E3ABB8773D9E39CB /* Pods-LOGIN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOGIN.debug.xcconfig"; path = "Target Support Files/Pods-LOGIN/Pods-LOGIN.debug.xcconfig"; sourceTree = "<group>"; };
 		D7FE22E9743C5D2FDF6AC286 /* Pods-LOGIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LOGIN.release.xcconfig"; path = "Target Support Files/Pods-LOGIN/Pods-LOGIN.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				229CBAF127D99A3D00041660 /* Main.storyboard */,
 				220F57D727DA7A3700FC2256 /* HomeVc.swift */,
 				220F57DB27DA7AF000FC2256 /* LoginVC.swift */,
+				22E0CBF227DBD28C00BE683A /* RegisterViewController.swift */,
+				22E0CBF427DBE8D600BE683A /* RootViewController.swift */,
 				220F57DD27DA7B0D00FC2256 /* utils */,
 				229CBAF427D99A3F00041660 /* Assets.xcassets */,
 				229CBAF627D99A3F00041660 /* LaunchScreen.storyboard */,
@@ -251,6 +257,8 @@
 				220F583627DAD51400FC2256 /* ExternalClass.swift in Sources */,
 				229CBAEC27D99A3D00041660 /* AppDelegate.swift in Sources */,
 				229CBAEE27D99A3D00041660 /* SceneDelegate.swift in Sources */,
+				22E0CBF527DBE8D700BE683A /* RootViewController.swift in Sources */,
+				22E0CBF327DBD28C00BE683A /* RegisterViewController.swift in Sources */,
 				220F57DA27DA7A8500FC2256 /* UserDetails.swift in Sources */,
 				220F57E427DA7B4B00FC2256 /* ProfileVCViewController.swift in Sources */,
 			);
