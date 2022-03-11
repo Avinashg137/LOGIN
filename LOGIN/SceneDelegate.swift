@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  LOGIN
+//  NUTREE
 //
-//  Created by MAC OS on 09/03/22.
+//  Created by MAC OS on 28/01/22.
 //
 
 import UIKit
@@ -16,7 +16,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        /// 1. Capture the scene
+                guard let windowScene = (scene as? UIWindowScene) else { return }
+                
+                /// 2. Create a new UIWindow using the windowScene constructor which takes in a window scene.
+                let window = UIWindow(windowScene: windowScene)
+                
+                /// 3. Create a view hierarchy programmatically
+                let navigation : UINavigationController
+               if UserDetail.isUserLoggedIn {
+                    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                    let VC  = storyboard.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+                    navigation = UINavigationController(rootViewController:VC)
+
+
+                } else {
+                    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                    let VC  = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+                    navigation = UINavigationController(rootViewController:VC)
+
+                }
+                
+                /// 4. Set the root view controller of the window with your view controller
+                window.rootViewController = navigation
+                
+                /// 5. Set the window and call makeKeyAndVisible()
+                self.window = window
+                window.makeKeyAndVisible()
+               
+                
+                
+             
+            }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -48,5 +79,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
+
 
