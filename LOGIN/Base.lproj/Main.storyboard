@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1MJ-gs-dpC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -80,6 +80,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up">
                                             <color key="baseForegroundColor" red="0.26142984629999999" green="0.62242490049999999" blue="0.54869496819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="1MJ-gs-dpC" kind="show" id="cnf-6Y-2R4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -112,7 +115,7 @@
             <objects>
                 <viewController storyboardIdentifier="RegisterViewController" id="1MJ-gs-dpC" customClass="RegisterViewController" customModule="LOGIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vAh-vK-hbJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOb-67-Z0M">
@@ -209,10 +212,10 @@
                             <constraint firstItem="DOb-67-Z0M" firstAttribute="leading" secondItem="kji-Gd-iaO" secondAttribute="leading" id="vix-4d-NhY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dNM-g1-C3E"/>
                     <connections>
                         <outlet property="confirmPasswordTxtField" destination="9gW-gG-RP7" id="uY7-ix-PJs"/>
                         <outlet property="emailTxtField" destination="NyH-8j-azi" id="vdL-8B-1dc"/>
-                        <outlet property="lblName" destination="gsJ-2O-aTj" id="wVE-Vk-aKe"/>
                         <outlet property="nameTxtField" destination="FDp-UY-6sG" id="ShH-Z5-odj"/>
                         <outlet property="passwordTxtField" destination="BAm-bg-Wan" id="B2v-cP-uzk"/>
                     </connections>
